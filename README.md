@@ -11,7 +11,7 @@ Presents tunes in nested tree hierarchy: genre/artist/album/title.
 
 ---
 
-Leverages [music-browser-api](https://github.com/TimBiernat/music-browser-api) backend that loads, parses and serves up tunes from local filesystem.
+Leverages [music-browser-api](https://github.com/TimBiernat/music-browser-api) backend that loads, parses and serves up tunes from host server filesystem.
 
 Built with Angular framework using Material Design.
 
