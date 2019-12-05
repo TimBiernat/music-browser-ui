@@ -20,6 +20,6 @@ Deployment:
 * npm install
 * ng build --prod
 * (setup corresponding [music-browser-api project](https://github.com/TimBiernat/music-browser-api))
-* copy all files from dist/music-browser-ui to music-browser project public directory
-* startup music-browser (npm start)
+* copy all files from dist/music-browser-ui to music-browser-api project public directory
+* startup music-browser-api (npm start)
 * point your mobile web browser to to http://{host}:{port}
