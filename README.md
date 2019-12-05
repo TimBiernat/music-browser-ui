@@ -11,6 +11,7 @@ Presents tunes in tree hierarchy: genre/artist/album/title.
 Built with Angular framework and material design. Leverages music-browser backend that loads, parses and serves up tunes from local filesystem.
 
 Deployment:
+* npm install
 * ng build --prod
 * (setup corresponding music-browsewr server project)
 * copy all files from dist/music-browser-ui to music-browser project public directory
