@@ -1,0 +1,23 @@
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+  <!-- This is the tree node template for leaf nodes -->
+  <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+    <!-- use a disabled button to provide padding for tree leaf -->
+    <button mat-icon-button disabled></button>
+    <div (click)='click(node.id)' [ngClass]="{'playing' : playing && node.id === id}">{{node.name}}</div>
+  </mat-tree-node>
+  <!-- This is the tree node template for expandable nodes -->
+  <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+    <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
+      <mat-icon class="mat-icon-rtl-mirror">
+        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+      </mat-icon>
+    </button>
+    {{node.name}}
+  </mat-tree-node>
+</mat-tree>
+<mat-toolbar class="sticky">
+  <div class="gap" (click)='volumeDown()'><i class="material-icons md-48">volume_down</i></div>
+  <div class="gap" (click)='mute()' [ngClass]="{'disabled' : muted}"><i class="material-icons md-48">volume_off</i>
+  </div>
+  <div (click)='volumeUp()'><i class="material-icons md-48">volume_up</i></div>
+</mat-toolbar>

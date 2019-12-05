@@ -1,0 +1,40 @@
+.playing {
+    font-weight: bold;
+    color: yellow;
+}
+
+.gap {
+    margin-right: 50px;
+ }
+
+ .sticky {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000; 
+    justify-content: center;
+}
+
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.disabled { color: gray; }
+
+mat-app-background {
+    background-color: black;
+    color: white;
+}
+mat-toolbar {
+    background-color: darkgray;
+    color: white;
+}
+
+mat-tree {
+    background-color: black;
+    color: white;
+}
+
+mat-tree-node {
+    background-color: black;
+    color: white;
+}
