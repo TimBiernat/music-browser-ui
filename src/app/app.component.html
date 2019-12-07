@@ -16,8 +16,8 @@
   </mat-tree-node>
 </mat-tree>
 <mat-toolbar class="sticky">
-  <div class="gap" (click)='volumeDown()'><i class="material-icons md-48">volume_down</i></div>
-  <div class="gap" (click)='mute()' [ngClass]="{'disabled' : muted}"><i class="material-icons md-48">volume_off</i>
+  <div class="gap control" (click)='volumeDown()'>-</div>
+  <div class="gap" (click)='mute()' [ngClass]="{'disabled' : muted}"><i class="material-icons md-36">volume_off</i>
   </div>
-  <div (click)='volumeUp()'><i class="material-icons md-48">volume_up</i></div>
+  <div class="control" (click)='volumeUp()'>+</div>
 </mat-toolbar>
