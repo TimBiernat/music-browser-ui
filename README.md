@@ -17,6 +17,7 @@ Built with Angular framework using Material Design.
 
 Deployment:
 
+* sudo npm install -g @angular/cli
 * npm install
 * ng build --prod
 * (setup corresponding [music-browser-api project](https://github.com/TimBiernat/music-browser-api))

@@ -27,12 +27,11 @@ export class AppComponent implements OnInit {
   tree: MusicNode[] = [];
   treeControl = new FlatTreeControl<FlatNode>(node => node.level, node => node.expandable);
   private transformer = (node: MusicNode, level: number) => {
-
     return {
       expandable: !!node.children && node.children.length > 0,
       name: node.name,
       id: node.id,
-      level: level
+      level
     };
   }
 
